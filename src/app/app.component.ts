@@ -10,10 +10,12 @@ export class AppComponent {
 
   nav_toggle() {
     if (document.getElementById('nav')?.style.right == '0px') {
-      document.getElementById('nav')!.style.right = '-310px';
+      document.getElementById('nav')!.style.right = '-300px';
+      document.getElementById('nav')!.style.visibility = 'hidden';
       document.getElementById('icon')!.style.transform = 'rotate(0deg)';
     } else {
       document.getElementById('nav')!.style.right = '0px';
+      document.getElementById('nav')!.style.visibility = 'visible';
       document.getElementById('icon')!.style.transform = 'rotate(90deg)';
     }
   }
@@ -27,7 +29,13 @@ export class AppComponent {
    // AUTO ACTIVE ON SCROLL
    @HostListener('window:scroll', [])
    onScroll(): void {
-     const sections = document.querySelectorAll('section');
+
+    if (document.getElementById('nav')?.style.right == '0px') {
+      document.getElementById('nav')!.style.right = '-310px';
+      document.getElementById('icon')!.style.transform = 'rotate(0deg)';
+    }
+
+    const sections = document.querySelectorAll('section');
      const NavLi = document.querySelectorAll('nav ul li');
      let current: string = '';
      sections.forEach((section) => {

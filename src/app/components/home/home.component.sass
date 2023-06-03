@@ -1,0 +1,122 @@
+.header
+    height: 100vh
+    display: flex
+
+    .photo
+        .pic
+            display: none
+
+    .image
+        background-image: url('/assets/images/home/header.jpg')
+        background-attachment: fixed
+        background-position: left
+        background-repeat: no-repeat
+        background-size: cover
+        height: 100vh
+        width: 50%
+
+    .profile
+        display: flex
+        justify-content: center
+        flex-direction: column
+        margin-left: 20px
+        color: black
+
+        .profile-info
+            font-size: 60px
+            color: #FF7171
+            font-family: 'Inter-Bold'
+
+        .profile-medium
+            font-size: 45px
+            font-family: 'Inter-Regular'
+
+        .profile-small
+            font-size: 17px
+            font-family: 'Inter-Light'
+
+        .socials
+
+            .social-button
+                border: 0.3px solid black
+                cursor: pointer
+                background: white
+                width: 40px
+                height: 40px
+                border-radius: 100px
+
+                &:hover img
+                    filter: invert(1)
+
+                &:hover
+                    background: black
+
+            .social-button:not(:last-child)
+                margin-right: 25px
+
+            @at-root
+                img
+                    width: 20px
+                    hwight: 20px
+
+@media screen and ( max-width: 1200px )
+    .header
+
+        .image
+            width: 55%
+
+        .profile
+
+            .profile-info
+                font-size: 50px
+                line-height: 0.8
+                margin-bottom: 5px
+
+            .profile-medium
+                font-size: 35px
+                margin-bottom: 5px
+
+            .profile-small
+                font-size: 15px
+                margin-bottom: 5px
+
+@media screen and ( max-width: 992px )
+    .header
+        flex-direction: column
+
+        .image
+            width: 100%
+            height: 60vh
+            background-position: left
+            background-attachment: scroll
+
+        .profile
+            padding-top: 40px
+
+            .profile-info
+                font-size: 60px
+                color: #FF7171
+
+            .profile-medium
+                font-size: 45px
+
+            .profile-small
+                font-size: 17px
+
+            .socials
+                .social-button:not(:last-child)
+                    margin-right: 20px
+
+@media screen and ( max-width: 600px )
+    .header
+
+        .profile
+
+            .profile-info
+                font-size: 50px !important
+
+            .profile-medium
+                font-size: 35px !important
+
+            .profile-small
+                font-size: 15px !important

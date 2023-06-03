@@ -14,17 +14,19 @@
 
 .navigation
     overflow: hidden
+    z-index: 1
 
     .nav
+        visibility: hidden
         background-color: #FDF1F1
         height: 100vh
-        width: 310px
+        width: 300px
         float: right
         font-size: 18px
         padding: 70px 0px 0px 70px
         position: fixed
         right: -310px
-        transition: right 0.5s ease-in-out
+        transition: all 0.5s ease-in-out
 
     .nav-items
         list-style: none
@@ -36,9 +38,13 @@
             font-weight: 400
 
         .active::before
-            content: url('../assets/images/navbar/brush.svg')
+            content: url('/assets/images/navbar/brush.svg')
             position: absolute
             left: -40px
 
         .active
             color: #FF7171
+
+.test
+    height: 100vh
+    background: green
