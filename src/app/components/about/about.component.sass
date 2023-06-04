@@ -6,12 +6,9 @@
         to
             width: $progress
 
-
-
 .about
-    background-image: url('/assets/images/about/bg.jpg')
-    background-size: cover
-
+    padding: 100px 0px
+    
     .intro
         width: 340px
         .heading
@@ -31,12 +28,20 @@
 
     .brief
         display: flex
+
+        .intro:not(:last-child)
+            margin-right: 100px
+
         .intro
+            margin-top: 60px
 
             .desc
                 margin-bottom: 5px
 
             .details
+                p
+                font-family: 'Inter-Light'
+
 
                 .title
                     font-family: 'Inter-Regular'
@@ -77,3 +82,39 @@
 
                 .skill:not(:last-child)
                     margin-bottom: 25px
+
+@media screen and ( max-width: 1200px )
+
+@media screen and ( max-width: 992px )
+    .about
+
+        .intro
+            width: 300px
+
+        .brief
+
+            .intro:not(:last-child)
+                margin-right: 50px
+
+@media screen and ( max-width: 768px )
+    .about
+        padding: 70px 0px 70px 20px
+
+        .intro
+            width: 340px
+        
+        .brief
+            display: flex
+            flex-direction: column
+            justify-content: start
+
+            .intro
+                margin-top: 40px
+
+            .intro:not(:last-child)
+                margin-right: 0px
+
+@media screen and ( max-width: 600px )
+    .about
+        .intro
+            width: 300px
