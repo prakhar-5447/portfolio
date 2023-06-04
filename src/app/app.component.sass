@@ -51,8 +51,103 @@
     display: flex
     justify-content: center
 
+.work
+    background-image: url("/assets/images/about/clients.jpeg")
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 300px
+    color: #F6F6F6
+
+    .project-info
+        text-align: center
+        margin-right: 100px
+
+        .project
+            width: 70px
+            height: 90px
+            margin-bottom: 20px
+
+        p
+            font-family: 'Inter-Regular'
+            font-size: 17px
+            margin-bottom: 0px
+
+        .project-count
+            font-family: 'Inter-Regular'
+            font-size: 35px
+
+    .hire
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .invite-message
+            font-family: 'Inter-Regular'
+            margin-bottom: 0px
+            margin-right: 20px
+            font-size: 25px
+
+        .invite-button
+            color: white
+            font-family: 'Inter-Light'
+            background: transparent
+            border: 0.5px solid white
+            padding: 10px 15px
+            font-size: 14px
+
+            &:hover
+                color: black
+                cursor: pointer
+                background: white
+
+@media screen and ( max-width: 992px )
+    .work
+
+        .project-info
+            margin-right: 50px
+
+            .project
+                width: 50px
+                height: 70px
+                margin-bottom: 15px
+
+            p
+                font-size: 14px
+
+            .project-count
+                font-size: 25px
+
+        .hire
+
+            .invite-message
+                margin-right: 15px
+                font-size: 20px
+
+            .invite-button
+                font-size: 14px
+
+@media screen and ( max-width: 768px )
+    .work
+        justify-content: space-around
+        padding: 0px 20px
+
+        .project-info
+            .project
+                margin-bottom: 5px
+
+        .hire
+            flex-direction: column
+
+            .invite-message
+                margin-right: 0px
+                margin-bottom: 10px
+                text-align: center
 
 @media screen and ( max-width: 600px )
     .container
         display: block
-        
