@@ -1,1 +1,8 @@
-<p>projects works!</p>
+<section id="PROJECTS" class="project">
+  <h1 class="heading">PROJECTS</h1>
+  <div class="cards">
+    <div class="card" *ngFor="let i of projects">
+      <img class="project-image" src="{{ i.src }}" alt="{{ i.title }}" />
+    </div>
+  </div>
+</section>
