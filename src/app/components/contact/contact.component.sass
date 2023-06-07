@@ -1,0 +1,129 @@
+.contacts
+    padding: 70px 0px
+    .header
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .title
+            font-family: "Inter-Medium"
+            font-size: 35px
+            margin-bottom: 10px
+
+        .desc
+            font-family: "Inter-Light"
+            font-size: 14px
+
+    .contact-area
+        margin-top: 100px
+        display: flex
+        justify-content: center
+        gap: 100px
+
+        .contact-info
+            width: 300px
+            font-family: 'Inter-Light'
+            .heading
+                font-family: 'Inter-Regular'
+                font-size: 25px
+                margin-bottom: 0px
+                color: #FF7171
+            p
+                font-size: 14px
+
+            .details
+                .detail
+                    display: flex
+                    align-items: center
+                    border-left: 1px solid #FF7171
+                    padding-left: 10px
+                    .detail-image
+                        margin-right: 10px
+                    .detail-field
+                        font-family: "Inter-Light"
+                        font-size: 14px
+                        margin-bottom: 0px
+
+                .detail:hover
+                    background: #FDF1F1
+
+                .detail:not(:last-child)
+                    margin-bottom: 15px
+
+        .contact-form
+            h1
+            .form-area
+                display: flex
+                flex-direction: column
+                font-family: "Inter-Light"
+                width: 500px
+
+                .row
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 15px
+                    gap: 20px
+
+                    .name
+                        width: 180px
+
+                textarea
+                    resize: vertical
+                    margin-top: 15px
+
+                input,textarea
+                    font-family: 'Inter-Light'
+                    width: 100%
+                    padding: 10px
+                    border: 0.5px solid #736F6F
+                    border-radius: 3px
+
+                .submit-button
+                    font-family: 'Inter-Light'
+                    color: white
+                    background: #FF7171
+                    border: 0.5px solid #FF7171
+                    padding: 10px 15px
+                    font-size: 14px
+                    width: 100px
+                    margin-top: 20px
+                    cursor: pointer
+
+@media screen and ( max-width: 992px )
+    .contacts
+        .contact-area
+            margin-top: 30px
+            flex-wrap: wrap
+            gap: 30px
+
+@media screen and ( max-width: 992px )
+    .contacts
+        padding: 50px 20px
+
+@media screen and ( max-width: 600px )
+    .contacts
+        .header
+            .title
+                font-size: 25px
+                margin-bottom: 0px
+
+            .desc
+                text-align: center
+        .contact-area
+            .contact-form
+                width: 100%
+                .form-area
+                    justify-content: center
+                    align-items: center
+                    width: 100%
+                    .row
+                        display: block
+                        margin-bottom: 0px
+                        width: 100%
+                        .name
+                            width: 100%
+                        .email
+                            margin: 10px 0px
+                    textarea
+                        margin-top: 10px
