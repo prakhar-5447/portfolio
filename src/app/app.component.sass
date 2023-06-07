@@ -109,6 +109,60 @@
 .services
     background: #F3F3F3
 
+.footer
+    padding: 50px 0px
+    background: #E9E9E9
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    gap: 20px
+
+    .copywrite
+        font-family: "Inter-Light"
+        font-size: 14px
+
+        .copywrite-author
+
+    .footer-area
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        .footer-message
+            text-align: center
+            font-family: "Inter-Light"
+
+        .socials
+
+            .social-button
+                border: 0.3px solid black
+                cursor: pointer
+                background: transparent
+                width: 40px
+                height: 40px
+                border-radius: 100px
+
+                a
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                &:hover img
+                    filter: invert(1)
+
+                &:hover
+                    background: black
+
+            .social-button:not(:last-child)
+                margin-right: 25px
+
+            @at-root
+                img
+                    width: 20px
 
 @media screen and ( max-width: 992px )
     .work
@@ -153,6 +207,10 @@
                 margin-right: 0px
                 margin-bottom: 10px
                 text-align: center
+
+    .footer
+        padding: 30px 0px
+        gap: 10px
 
 @media screen and ( max-width: 600px )
     .work
