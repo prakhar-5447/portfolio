@@ -1,0 +1,52 @@
+.services
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 70px 0px
+
+    .heading
+        font-family: 'Inter-Regular'
+        font-size: 25px
+        color: #FF7171
+        align-self: flex-start
+
+    .cards
+        margin-top: 30px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 30px 20px
+
+        .card
+            text-align: justify
+            font-family: 'Inter-Light'
+            font-size: 14px
+            width: 280px
+            border: 0.5px solid #736F6F
+            padding: 60px 30px
+
+            .logo
+                float: left
+                margin-right: 20px
+
+@media screen and ( max-width: 900px )
+    .services
+        .heading
+            text-align: center
+            
+@media screen and ( max-width: 768px )
+    .services
+        padding: 50px 10px
+
+@media screen and ( max-width: 600px )
+    .services
+        .heading
+        .cards
+            display: block
+            padding: 0px 20px
+            .card
+                width: 100%
+
+            .card:not(:last-child)
+                margin-block: 30px
