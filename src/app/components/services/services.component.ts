@@ -20,7 +20,7 @@ export class ServicesComponent {
     {
       names: 'Design',
       logo:'/assets/images/services/design.svg',
-      desc: 'Basic knowledge of designing, always used to design before start coding. i use Figma and Adobe Illustrator for artwork like channel art and thumbnails for youtube. ',
+      desc: 'Basic knowledge of designing, always used to design before start coding. I use Figma and Adobe Illustrator for artwork like channel art and thumbnails for youtube. ',
     },
   ];
 }
