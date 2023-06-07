@@ -1,4 +1,4 @@
-.project
+.projects
     padding: 70px 0px
 
     .heading
@@ -11,7 +11,7 @@
         width: 900px
         margin: auto
         display: flex
-        justify-content: space-between
+        gap: 20px
         flex-wrap: wrap
 
         .card
@@ -24,24 +24,23 @@
                 height: 100%
 
 @media screen and ( max-width: 992px )
-    .project
+    .projects
 
         .cards
-            justify-content: space-around
+            justify-content: center
             width: 100%
             margin: 0px
             padding: 0px 20px
 
 @media screen and ( max-width: 768px )
-    .project
+    .projects
         padding: 50px 10px
 
 
 @media screen and ( max-width: 600px )
-    .project
-
+    .projects
         .cards
-
+            gap: 10px
             .card
                 width: 100%
 
