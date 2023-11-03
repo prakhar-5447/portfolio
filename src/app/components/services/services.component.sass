@@ -10,6 +10,7 @@
         font-size: 25px
         color: #FF7171
         align-self: flex-start
+        user-select: none
 
     .cards
         margin-top: 30px
@@ -24,11 +25,12 @@
             font-size: 14px
             width: 280px
             border: 0.5px solid #736F6F
-            padding: 60px 30px
+            padding: 40px 30px
 
             .logo
                 float: left
                 margin-right: 20px
+                user-select: none
 
 @media screen and ( max-width: 900px )
     .services
@@ -39,14 +41,18 @@
     .services
         padding: 50px 20px
 
+        .cards
+            .card
+                width: 250px
+                padding: 30px 15px
+
+
 @media screen and ( max-width: 600px )
     .services
         .heading
         .cards
             display: block
-            gap: 20px
-            .card
-                width: 100%
+            gap: 15px
 
             .card:not(:last-child)
                 margin-block: 30px

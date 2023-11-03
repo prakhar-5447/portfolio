@@ -24,11 +24,14 @@
         .contact-info
             width: 300px
             font-family: 'Inter-Light'
+
             .heading
                 font-family: 'Inter-Regular'
                 font-size: 25px
                 margin-bottom: 0px
                 color: #FF7171
+                user-select: none
+
             p
                 font-size: 14px
 
@@ -38,8 +41,11 @@
                     align-items: center
                     border-left: 1px solid #FF7171
                     padding-left: 10px
+
                     .detail-image
                         margin-right: 10px
+                        user-select: none
+
                     .detail-field
                         font-family: "Inter-Light"
                         font-size: 14px
@@ -59,17 +65,21 @@
                 font-family: "Inter-Light"
                 width: 500px
 
+                .contact-form-msg
+                    font-size: 12px
+                    color: gray
+
                 .row
                     display: flex
-                    justify-content: space-between
                     margin-bottom: 15px
-                    gap: 20px
 
                     .name
                         width: 180px
+                        margin-right: 20px 
+
 
                 textarea
-                    resize: vertical
+                    resize: none
                     margin-top: 15px
 
                 input,textarea
@@ -113,16 +123,22 @@
         .contact-area
             .contact-form
                 width: 100%
+
                 .form-area
                     justify-content: center
                     align-items: center
                     width: 100%
+
+                    .contact-form-msg
+                        align-self: flex-start
+
                     .row
                         display: block
                         margin-bottom: 0px
                         width: 100%
                         .name
                             width: 100%
+                            margin-right: 0px
                         .email
                             margin: 10px 0px
                     textarea

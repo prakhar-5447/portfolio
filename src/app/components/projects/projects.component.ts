@@ -10,27 +10,22 @@ export class ProjectsComponent {
     {
       title: 'Juicy-N-Yummy',
       link: 'https://github.com/pratham-0094/Juicy-N-Yummy',
-      src: 'https://plus.unsplash.com/premium_photo-1682308427166-2e5debb54179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      src: '/assets/images/projects/juicy-n-yummy.jpg',
     },
     {
-      title: 'Juicy-N-Yummy',
-      link: 'https://github.com/pratham-0094/Juicy-N-Yummy',
-      src: 'https://plus.unsplash.com/premium_photo-1682308427166-2e5debb54179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      title: 'INO',
+      link: 'https://github.com/prakhar-5447/INO',
+      src: '/assets/images/projects/ino.jpg',
     },
     {
-      title: 'Juicy-N-Yummy',
-      link: 'https://github.com/pratham-0094/Juicy-N-Yummy',
-      src: 'https://plus.unsplash.com/premium_photo-1682308427166-2e5debb54179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      title: 'Firstmy',
+      link: 'https://github.com/prakhar-5447/firstmy',
+      src: '/assets/images/projects/firstmy.jpg',
     },
     {
-      title: 'Juicy-N-Yummy',
-      link: 'https://github.com/pratham-0094/Juicy-N-Yummy',
-      src: 'https://plus.unsplash.com/premium_photo-1682308427166-2e5debb54179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-    },
-    {
-      title: 'Juicy-N-Yummy',
-      link: 'https://github.com/pratham-0094/Juicy-N-Yummy',
-      src: 'https://plus.unsplash.com/premium_photo-1682308427166-2e5debb54179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      title: 'Todo App',
+      link: 'https://github.com/prakhar-5447/angular-project',
+      src: '/assets/images/projects/todo-app.jpg',
     },
   ];
 }
