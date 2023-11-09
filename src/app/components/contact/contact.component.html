@@ -10,7 +10,11 @@
       <div class="details">
         <div class="detail">
           <img class="detail-image" src="/assets/images/contact/email.svg" alt="" />
-          <h1 class="detail-field">sahuprakhar022003@gmaiil.com</h1>
+          <h1 class="detail-field">
+            <a href="mailto:sahuprakhar022003@gmail.com">
+              sahuprakhar022003@gmaiil.com
+            </a>
+          </h1>
         </div>
         <div class="detail">
           <img class="detail-image" src="/assets/images/contact/phone.svg" alt="" />
@@ -27,10 +31,10 @@
       <div class="form-area">
         <div class="row">
           <input type="text" autocomplete="off" placeholder="Name" class="name" [(ngModel)]="name" />
-          <input type="text" autocomplete="off" placeholder="Email" class="email"  [(ngModel)]="email" />
+          <input type="text" autocomplete="off" placeholder="Email" class="email" [(ngModel)]="email" />
         </div>
-        <input type="text" placeholder="Subject" class="subject"  [(ngModel)]="subject" />
-        <textarea  [(ngModel)]="description" placeholder="Description" cols="50" rows="5"></textarea>
+        <input type="text" placeholder="Subject" class="subject" [(ngModel)]="subject" />
+        <textarea [(ngModel)]="description" placeholder="Description" cols="50" rows="5"></textarea>
         <span class="contact-form-msg">*check email and description
         </span>
         <button class="submit-button" (click)="sendData()">SUBMIT</button>

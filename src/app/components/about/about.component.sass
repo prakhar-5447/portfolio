@@ -8,7 +8,7 @@
 
 .about
     padding: 70px 0px
-    
+
     .intro
         width: 340px
         .heading
@@ -41,8 +41,7 @@
 
             .details
                 p
-                font-family: 'Inter-Light'
-
+                    font-family: 'Inter-Light'
 
                 .title
                     font-family: 'Inter-Regular'
@@ -84,6 +83,31 @@
                 .skill:not(:last-child)
                     margin-bottom: 25px
 
+    .resume-area
+        display: flex
+        justify-content: center
+        margin-top: 30px
+
+        .resume
+            border: 1px solid black
+            padding: 10px 30px
+            display: flex
+            align-items: center
+            background: none
+            &:hover
+                cursor: pointer
+
+            .resume-text
+                font-family: 'Inter-Regular'
+                font-size: 14px
+                color: black
+                text-decoration: none
+
+            img
+                width: 15px
+                margin-right: 10px
+
+
 @media screen and ( max-width: 992px )
     .about
 
@@ -101,7 +125,7 @@
 
         .intro
             width: 340px
-        
+
         .brief
             display: flex
             flex-direction: column
