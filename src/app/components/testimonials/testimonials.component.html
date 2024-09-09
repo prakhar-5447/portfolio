@@ -1,0 +1,23 @@
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <h2>What <span>Clients</span> Say</h2>
+        <div class="slides" #slidesContainer>
+            <div class="space"></div>
+            <div class="testimonial" *ngFor="let testimonial of testimonials">
+                <div class="client-info">
+                    <img [src]="testimonial.image" alt="{{ testimonial.name }}" class="client-image" />
+                    <div class="client-details">
+                        <h4 class="client-name">{{ testimonial.name }}</h4>
+                        <p class="client-role">{{ testimonial.role }}</p>
+                    </div>
+                </div>
+                <p class="quote">{{ testimonial.quote }}</p>
+            </div>
+            <div class="space"></div>
+        </div>
+        <div class="dots">
+            <span *ngFor="let testimonial of testimonials; let i = index" (click)="scrollToSlide(i)"
+                [class.active]="i === currentSlideIndex"></span>
+        </div>
+    </div>
+</section>

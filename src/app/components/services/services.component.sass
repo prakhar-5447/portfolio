@@ -1,58 +1,100 @@
 .services
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    padding: 70px 0px
-
+    padding: 60px 200px
     .heading
-        font-family: 'Inter-Regular'
-        font-size: 25px
-        color: #FF7171
-        align-self: flex-start
+        font-family: 'Inter-Bold'
+        font-size: 32px
+        color: #333
+        margin-bottom: 40px
         user-select: none
+        span
+            color: #ff7171
 
     .cards
-        margin-top: 30px
         display: flex
         flex-wrap: wrap
-        justify-content: center
-        gap: 30px
+        justify-content: flex-start
+        gap: 40px
+        cursor: pointer
 
         .card
-            text-align: justify
-            font-family: 'Inter-Light'
-            font-size: 14px
-            width: 280px
-            border: 0.5px solid #736F6F
-            padding: 40px 30px
+            max-width: 300px
+            background: #ffffff
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08)
+            border-radius: 16px
+            padding: 30px
+            transition: transform 0.3s ease, box-shadow 0.3s ease
 
-            .logo
-                float: left
-                margin-right: 20px
-                user-select: none
+            &:hover
+                transform: translateY(-10px)
 
-@media screen and ( max-width: 900px )
+            h2
+                text-align: end
+                font-family: 'Inter-Regular'
+                font-size: 46px
+                margin-bottom: 60px
+                color: #ff7171
+
+            .card-content
+                h3
+                    font-family: 'Inter-Medium'
+                    font-size: 36px
+                    line-height: 35px
+                    margin-bottom: 20px
+                    color: #181616
+
+                p
+                    font-family: 'Inter-Light'
+                    font-size: 14px
+                    line-height: 20px
+                    color: #868686
+                    text-align: left
+
+@media screen and ( max-width: 1200px )
     .services
-        .heading
-            text-align: center
-            
+        padding: 40px 60px
+
 @media screen and ( max-width: 768px )
     .services
-        padding: 50px 20px
-
-        .cards
-            .card
-                width: 250px
-                padding: 30px 15px
-
-
-@media screen and ( max-width: 600px )
-    .services
+        padding: 20px
         .heading
+            font-size: 25px
         .cards
-            display: block
-            gap: 15px
+            gap: 20px
+            .card
+                padding: 25px
+                h2
+                    font-size: 32px
+                    margin-bottom: 30px
+                .card-content
+                    h3
+                        font-size: 24px
+                        margin-bottom: 10px
+                        line-height: 26px
 
-            .card:not(:last-child)
-                margin-block: 30px
+                    p
+                        font-size: 8px
+                        line-height: 14px
+
+@media screen and ( max-width: 660px )
+    .services
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        .cards
+            gap: 20px
+            justify-content: center
+            .card
+                padding: 25px
+                h2
+                    font-size: 32px
+                    margin-bottom: 30px
+                .card-content
+                    h3
+                        font-size: 24px
+                        margin-bottom: 10px
+                        line-height: 26px
+
+                    p
+                        font-size: 8px
+                        line-height: 14px

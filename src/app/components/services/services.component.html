@@ -1,11 +1,12 @@
 <section id="SERVICES" class="services">
-  <div class="service-area">
-    <h1 class="heading">SERVICES</h1>
+    <h1 class="heading">What I do <span>Best</span></h1>
     <div class="cards">
       <div class="card" *ngFor="let i of services">
-        <img src="{{ i.logo }}" alt="" class="logo" />
-        <p>{{ i.desc }}</p>
+        <h2>{{i.id}}</h2>
+        <div class="card-content">
+          <h3>{{ i.title }}<br>{{ i.subtitle}}</h3>
+          <p>{{ i.desc }}</p>
+        </div>
       </div>
     </div>
-  </div>
 </section>

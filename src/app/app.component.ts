@@ -60,7 +60,7 @@ export class AppComponent {
     // Hide the loader after 5 seconds
     setTimeout(function () {
       loader!.style.display = 'none';
-    }, 1000); // 5000 milliseconds = 5 seconds
+    }, 100); // 5000 milliseconds = 5 seconds
 
   }
 

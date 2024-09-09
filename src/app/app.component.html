@@ -3,8 +3,7 @@
   <div class="loader"></div>
 </div>
 
-<button class="button" id="nav-button" mat-icon-button color="accent"
-  (click)="nav_toggle()">
+<button class="button" id="nav-button" mat-icon-button color="accent" (click)="nav_toggle()">
   <mat-icon id="icon">menu</mat-icon>
 </button>
 
@@ -19,9 +18,6 @@
       <li (click)="active_toogle('SERVICES')" class="SERVICES nav-item">
         SERVICES
       </li>
-      <li (click)="active_toogle('CONTACT')" class="CONTACT nav-item">
-        CONTACT
-      </li>
     </ul>
   </nav>
 </div>
@@ -33,28 +29,19 @@
 </div>
 
 <div class="work">
-  <div class="project-info">
-    <img src="/assets/images/about/project.svg" alt="project" class="project" />
-    <p><span class="project-count">10</span><br />COMPLETED PROJECTS</p>
-  </div>
-  <div class="hire">
-    <p class="invite-message">Need my help for project ?</p>
-    <button (click)="active_toogle('CONTACT')" class="invite-button">HIRE ME</button>
-  </div>
+  <p class="invite-message">Let's boost your <span>productivity</span> with me</p>
+  <button (click)="active_toogle('CONTACT')" class="invite-button">HIRE ME</button>
 </div>
 
 <app-projects></app-projects>
 
-<div class="services">
-  <app-services></app-services>
-</div>
+<app-services></app-services>
 
-<app-contact></app-contact>
+<app-testimonials></app-testimonials>
 
 <footer class="footer">
-  <h1 class="copywrite">
-    Copyright © 2023 <span class="copywrite-author">Prakhar Sahu</span>.
-    <a href="https://privacy-policy-test-site">Privacy Policy</a>
+  <h1 class="copyright">
+    Copyright © 2024 <span class="copywrite-author">Prakhar Sahu</span>.
   </h1>
   <div class="footer-area">
     <p class="footer-message">

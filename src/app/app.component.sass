@@ -6,7 +6,6 @@
         100%
             transform: rotate(360deg)
 
-
 .loader-container
     position: fixed
     top: 0
@@ -28,7 +27,6 @@
         @include keyframe(moving)
         animation: moving 1s linear infinite
 
-
 .button
     border: 0.5px solid #FF7171
     border-radius: 100px
@@ -38,16 +36,17 @@
     position: fixed
     right: 30px
     top: 20px
-    z-index: 1
+    z-index: 4
     background: #ff71715f
 
     #icon
         transition: transform 0.5s ease-in-out
 
 .navigation
+    position: relative
     overflow: hidden
     user-select: none
-    z-index: 1
+    z-index: 2
 
     .nav
         visibility: hidden
@@ -93,59 +92,37 @@
     display: flex
     justify-content: center
     align-items: center
-    height: 300px
+    height: 200px
     color: #F6F6F6
 
-    .project-info
-        user-select: none
-        text-align: center
-        margin-right: 100px
+    .invite-message
+        font-family: 'Inter-Light'
+        margin-bottom: 0px
+        margin-right: 30px
+        font-size: 25px
+        line-height: 25px
+        span
+            color: #FF7171
+            font-family: 'Inter-Medium'
 
-        .project
-            width: 70px
-            height: 90px
-            margin-bottom: 20px
+    .invite-button
+        color: white
+        font-family: 'Inter-Light'
+        background: transparent
+        border: 0.5px solid white
+        padding: 10px 15px
+        font-size: 14px
+        min-width: max-content
 
-        p
-            font-family: 'Inter-Regular'
-            font-size: 17px
-            margin-bottom: 0px
-
-        .project-count
-            font-family: 'Inter-Regular'
-            font-size: 35px
-
-    .hire
-        display: flex
-        align-items: center
-        justify-content: center
-
-        .invite-message
-            font-family: 'Inter-Regular'
-            margin-bottom: 0px
-            margin-right: 20px
-            font-size: 25px
-
-        .invite-button
-            color: white
-            font-family: 'Inter-Light'
-            background: transparent
-            border: 0.5px solid white
-            padding: 10px 15px
-            font-size: 14px
-
-            &:hover
-                transition: all 0.3s ease-in-out
-                color: black
-                cursor: pointer
-                background: white
-
-.services
-    background: #F3F3F3
+        &:hover
+            transition: all 0.3s ease-in-out
+            color: black
+            cursor: pointer
+            background: white
 
 .footer
-    padding: 50px 0px
-    background: #E9E9E9
+    padding: 60px 0px
+    background: #fbfbfb
     width: 100%
     display: flex
     flex-direction: column
@@ -154,11 +131,13 @@
     font-size: 14px
     gap: 20px
 
-    .copywrite
+    .copyright
+        margin: 0
         font-family: "Inter-Light"
         font-size: 14px
-
         .copywrite-author
+            color: #FF7171
+            font-family: "Inter-Medium"
 
     .footer-area
         display: flex
@@ -167,11 +146,11 @@
         justify-content: center
 
         .footer-message
+            font-size: 14px
             text-align: center
             font-family: "Inter-Light"
 
         .socials
-
             .social-button
                 border: 0.3px solid black
                 cursor: pointer
@@ -202,58 +181,33 @@
 
 @media screen and ( max-width: 992px )
     .work
-        height: 260px
-
-        .project-info
-            margin-right: 50px
-
-            .project
-                width: 50px
-                height: 70px
-                margin-bottom: 15px
-
-            p
-                font-size: 14px
-
-            .project-count
-                font-size: 25px
-
-        .hire
-
-            .invite-message
-                margin-right: 15px
-                font-size: 20px
+        .invite-message
+            margin-right: 14px
+            font-size: 20px
+            line-height: 20px
 
             .invite-button
                 font-size: 14px
 
 @media screen and ( max-width: 768px )
     .work
-        justify-content: space-around
         padding: 0px 20px
 
-        .project-info
-            .project
-                margin-bottom: 5px
-
-        .hire
-            flex-direction: column
-
-            .invite-message
-                margin-right: 0px
-                margin-bottom: 10px
-                text-align: center
-
     .footer
-        padding: 30px 0px
+        padding: 40px 0px
         gap: 10px
+        .copyright
+            font-size: 12px
+        .footer-area
+            .footer-message
+                font-size: 12px
+
+    .container
+        justify-content: flex-start
 
 @media screen and ( max-width: 600px )
     .button
         right: 20px
-
-    .work
-        height: 250px
 
     .container
         display: block

@@ -10,14 +10,14 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, ProjectsComponent, ServicesComponent, ContactComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, ProjectsComponent, ServicesComponent, TestimonialsComponent],
 
   imports: [
     BrowserModule,
