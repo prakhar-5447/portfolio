@@ -64,7 +64,7 @@
             flex: 1
             display: flex
             overflow: hidden
-            overflow-x: auto
+            overflow-x: hidden
             scroll-snap-type: x mandatory
             scroll-padding: wuto
             max-width: 100%
@@ -74,7 +74,7 @@
                 display: none
             .space
                 height: 300px
-                min-width: 100px
+                min-width: 200px
 
             .slide
                 scroll-snap-align: start
@@ -97,8 +97,12 @@
                     gap: 5px
                     a
                         text-decoration: none
-                        font-size: 14px
                         .social-button
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            height: 28px
+                            font-size: 14px
                             font-family: 'Inter-Light'
                             color: white
                             cursor: pointer
@@ -106,9 +110,15 @@
                             border: none
                             border-radius: 4px
                             padding: 5px 8px
+                            mat-icon
+                                display: flex
+                                font-size: 16px
+                                align-items: center
+                                justify-content: center
 
                 &:hover
                     cursor: pointer
+
                 &:hover .links
                     display: flex
                     justify-content: center
