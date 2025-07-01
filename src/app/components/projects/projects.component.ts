@@ -1,7 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-projects',
+  imports: [MatIconModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.sass'],
 })

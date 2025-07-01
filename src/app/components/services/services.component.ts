@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-services',
+  imports: [NgFor],
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.sass'],
 })

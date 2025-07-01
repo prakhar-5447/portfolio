@@ -1,9 +1,16 @@
 import { Component, HostListener } from '@angular/core';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ServicesComponent } from './components/services/services.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
+  imports: [MatIconModule, HomeComponent, AboutComponent, ProjectsComponent, ServicesComponent, TestimonialsComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass'],
+  styleUrl: './app.component.sass'
 })
 export class AppComponent {
   title = 'portfolio';
@@ -60,7 +67,7 @@ export class AppComponent {
     // Hide the loader after 5 seconds
     setTimeout(function () {
       loader!.style.display = 'none';
-    }, 100); // 5000 milliseconds = 5 seconds
+    }, 3000); // 3000 milliseconds = 3 seconds
 
   }
 
