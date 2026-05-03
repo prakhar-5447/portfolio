@@ -16,38 +16,19 @@
       <div class="slide">
         <img src="./images/projects/juicy-n-yummy.jpg" alt="Juicy-N-Yummy" class="project-image" />
         <div class="links">
-          <a href="https://github.com/pratham-0094/Juicy-N-Yummy" target="_blank">
+          <a href="https://github.com/prakhar-5447/Juicy-N-Yummy" target="_blank">
             <button class="social-button">
               Github
             </button>
           </a>
-          <a href="https://pratham-0094.github.io/Juicy-N-Yummy" target="_blank">
+          <a href="https://prakhar-5447.github.io/Juicy-N-Yummy" target="_blank">
             <button class="social-button">
               <mat-icon> call_made</mat-icon>
             </button>
           </a>
         </div>
       </div>
-      <div class="slide">
-        <img src="./images/projects/eventflow.jpg" alt="Eventflow" class="project-image" />
-        <div class="links">
-          <a href="https://github.com/prakhar-5447/eventflow" target="_blank">
-            <button class="social-button">
-              Github
-            </button>
-          </a>
-          <a href="./images/projects/eventflow-case-study.pdf" download="eventflow-case-study" target="_blank">
-            <button class="social-button">
-              Case Study
-            </button>
-          </a>
-          <a href="https://raw.githubusercontent.com/prakhar-5447/eventflow/main/eventflow.apk" target="_blank">
-            <button class="social-button">
-              <mat-icon>save_alt</mat-icon>
-            </button>
-          </a>
-        </div>
-      </div>
+
       <div class="slide">
         <img src="./images/projects/airmeal.jpg" alt="Airmeal" class="project-image" />
         <div class="links">
@@ -78,6 +59,26 @@
           </a>
         </div>
       </div>
+      <div class="slide">
+        <img src="./images/projects/eventflow.jpg" alt="Eventflow" class="project-image" />
+        <div class="links">
+          <a href="https://github.com/prakhar-5447/eventflow" target="_blank">
+            <button class="social-button">
+              Github
+            </button>
+          </a>
+          <a href="./images/projects/eventflow-case-study.pdf" download="eventflow-case-study" target="_blank">
+            <button class="social-button">
+              Case Study
+            </button>
+          </a>
+          <a href="https://raw.githubusercontent.com/prakhar-5447/eventflow/main/eventflow.apk" target="_blank">
+            <button class="social-button">
+              <mat-icon>save_alt</mat-icon>
+            </button>
+          </a>
+        </div>
+      </div>
       <div class="slide slide-border">
         <img src="./images/projects/blocknode.jpg" alt="blocknode" class="project-image" />
         <div class="links">
@@ -94,6 +95,44 @@
         </div>
       </div>
       <div class="space"></div>
+    </div>
+  </div>
+  <div class="accordion-section">
+    <h3>Beyond the <span>Highlights</span></h3>
+
+    <div class="accordion-item" *ngFor="let project of moreProjects; let i = index">
+
+      <div class="accordion-header" (click)="toggleAccordion(i)">
+        <span class="header">{{ project.name }} <div *ngIf="project!.project_type" class="label">
+            {{project.project_type}}</div></span>
+        <span class="icon">{{ activeIndex === i ? '−' : '+' }}</span>
+      </div>
+
+      <div class="accordion-body" *ngIf="activeIndex === i">
+        <p>{{ project.description }}</p>
+
+        <div class="links">
+          <a *ngFor="let link of project!.links" [href]="link.url" target="_blank">
+            <button class="social-button">
+              {{ link.label }}
+            </button>
+          </a>
+        </div>
+        <div class="design-gallery">
+          <div class="gallery-grid">
+
+            <div class="gallery-item" *ngFor="let item of project!.designImages">
+              <img [src]="item.src" [alt]="item.title" />
+
+              <div class="overlay">
+                <h4>{{ item.title }}</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

@@ -1,10 +1,10 @@
-@mixin keyframe($animation-name,$progress)
-    @keyframes #{$animation-name}
-        from
-            width: 0%
+// @mixin keyframe($animation-name,$progress)
+//     @keyframes #{$animation-name}
+//         from
+//             width: 0%
 
-        to
-            width: $progress
+//         to
+//             width: $progress
 
 .about
     padding: 70px 0px
@@ -68,20 +68,31 @@
                             background: #FF7171
 
                         .web
-                            @include keyframe(web,90%)
-                            animation: web 1s ease-in-out forwards
+                            width: 90%
 
                         .mobile
-                            @include keyframe(mobile,70%)
-                            animation: mobile 1s ease-in-out forwards
+                            width: 70%
 
                         .design
-                            @include keyframe(design,80%)
-                            animation: design 1s ease-in-out forwards
+                            width: 80%
 
                         .dsa
-                            @include keyframe(dsa,75%)
-                            animation: dsa 1s ease-in-out forwards
+                            width: 75%
+                        // .web
+                        //     @include keyframe(web,90%)
+                        //     animation: web 1s ease-in-out forwards
+
+                        // .mobile
+                        //     @include keyframe(mobile,70%)
+                        //     animation: mobile 1s ease-in-out forwards
+
+                        // .design
+                        //     @include keyframe(design,80%)
+                        //     animation: design 1s ease-in-out forwards
+
+                        // .dsa
+                        //     @include keyframe(dsa,75%)
+                        //     animation: dsa 1s ease-in-out forwards
 
                 .skill:not(:last-child)
                     margin-bottom: 25px
