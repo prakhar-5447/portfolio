@@ -73,12 +73,12 @@
             font-weight: 400
             -webkit-tap-highlight-color: transparent
         .active::before
-            content: url('/images/navbar/brush.svg')
+            content: url('../assets/images/navbar/brush.svg')
             position: absolute
             left: -40px
-
         .active
             color: #FF7171
+            
 
 .container
     background-size: cover
@@ -113,14 +113,25 @@
         border: 0.5px solid white
         padding: 10px 15px
         font-size: 14px
-        min-width: max-content
+        min-width: 140px
 
         &:hover
-            transition: all 0.3s ease-in-out
+            transition: all 0.8s ease-in-out
+            transition: background 0.4s ease-in-out
             color: black
             cursor: pointer
             background: white
+        &.animate
+            animation: swapText 3s ease
 
+        @keyframes swapText
+            0%
+                opacity: 0
+                transform: translateY(8px)
+
+            100%
+                opacity: 1
+                transform: translateY(0)
 .footer
     padding: 60px 0px
     background: #fbfbfb

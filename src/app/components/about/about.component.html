@@ -7,8 +7,7 @@
         href="https://www.google.com/search?q=prakhar_5447&oq=prakhar_5447&aqs=chrome.0.69i59j69i64j0i546j69i60l2.2390j0j7&sourceid=chrome&ie=UTF-8"
         target="_blank">prakhar_5447</a>
       to find me. I am passionate about design, want to be a stand-alone UI/UX
-      designer. A disciplined person who loves to explore things either a place
-      or a language.
+      designer. A disciplined person who loves to explore things.
     </p>
     <p class="desc">
       I'm a highly motivated web developer with design skills who likes to work
@@ -20,14 +19,25 @@
     <div class="intro">
       <h1 class="heading">PROFILE</h1>
       <p class="desc">
-        Bachelor in Computer Science and Engineering, Shri Shankaracharya
-        Technical Campus (2020-24)
+        M.Tech in Computer Science and Engineering, IIT (ISM) Dhanbad (2026-2028)
       </p>
-      <p class="desc">Full Stack Developer, UI/UX Designer</p>
+
+      <p class="desc">
+        B.Tech in Computer Science and Engineering, Shri Shankaracharya Technical Campus (2020-2024)
+      </p>
       <div class="details">
         <p><span class="title">Name:</span><br />Prakhar Sahu</p>
         <p><span class="title">Birth Date:</span><br />02 Feb, 2003</p>
-        <p><span class="title">Phone Number:</span><br />+91 9826412657</p>
+        <p class="secret">
+          <span class="title">Phone Number:</span><br>+91
+          @if (!showPhone) {
+          <button class="reveal-phone" (click)="showPhone = true">
+            Click to View
+          </button>
+          } @else {
+          <span class="phone-number">9826412657</span>
+          }
+        </p>
         <p>
           <span class="title">Address:</span><br />Janjgir-Champa, Chhattisgarh
         </p>
@@ -39,8 +49,7 @@
     <div class="intro">
       <h1 class="heading">SKILLS</h1>
       <p class="desc">
-        Mostly work on frontend side, but also experience of backend (MEAN and MERN Stack). And basic knowledge of React
-        Native and Flutter.
+        Passionate about building scalable full-stack applications, cross-platform mobile apps, and intuitive user experiences. Experienced with modern frontend frameworks, backend development, databases, and UI/UX design while continuously exploring system design.
       </p>
       <div class="skills">
         <div class="skill">
@@ -72,7 +81,7 @@
   </div>
   <div class="resume-area">
     <button class="resume"><img src="./images/about/work.svg" alt="resume">
-      <a class="resume-text" href="./Resume.pdf" download="Prakhar-Sahu-Resume">RESUME</a>
+      <a class="resume-text" href="./Prakhar_Sahu_Resume.pdf" target="_blank">RESUME</a>
     </button>
   </div>
 </section>

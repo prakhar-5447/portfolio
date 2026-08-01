@@ -14,7 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class AppComponent {
   title = 'portfolio';
-
+  buttonText = "HIRE ME";
+  activeTab = "HOME";
   nav_toggle() {
     if (document.getElementById('nav')?.style.right == '0px') {
       document.getElementById('nav')!.style.right = '-300px';

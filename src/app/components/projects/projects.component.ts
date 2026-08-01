@@ -15,6 +15,16 @@ export class ProjectsComponent {
 
   moreProjects = [
     {
+      name: 'BlockNode',
+      description: 'A Figma-inspired visual development tool built with Angular that allows developers to create backend architectures by connecting drag-and-drop nodes. It supports modules such as servers, routers, routes, middleware, controllers, and functions, making it easy to visualize project structure.',
+      links: [
+        {
+          label: 'GitHub',
+          url: 'https://github.com/prakhar-5447/blocknode'
+        }
+      ]
+    },
+    {
       name: 'GoDB (Server + SDK)',
       description: 'A lightweight SQL database system built with Golang, consisting of a gRPC-based server and a client SDK. The server runs locally or via Docker, while the SDK (similar to Mongoose for MongoDB) provides easy-to-use methods like createUser, createTable, InsertRecords and more for seamless database interaction.',
       links: [
@@ -95,19 +105,19 @@ export class ProjectsComponent {
         }
       ],
       designImages: [{
-        src: '/images/projects/post_1.jpg',
+        src: './images/projects/post_1.jpg',
         title: 'Product Poster Design',
       },
       {
-        src: '/images/projects/post_2.jpg',
+        src: './images/projects/post_2.jpg',
         title: 'Poster Design',
       },
       {
-        src: '/images/projects/post_3.jpg',
+        src: './images/projects/post_3.jpg',
         title: 'Illustrator',
       },
       {
-        src: '/images/projects/post_4.jpg',
+        src: './images/projects/post_4.jpg',
         title: 'Motion Frame',
       }]
     }
